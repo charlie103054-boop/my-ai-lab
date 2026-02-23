@@ -33,7 +33,7 @@
                 定義未來的 <span class="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">視覺演算法</span>
             </h1>
             <p class="text-lg text-slate-400 max-w-2xl mx-auto mb-10">
-                我們致力於結合深度學習與頂尖美學，提供下一代的影像處理方案。從即時渲染到生成式 AI，讓視覺想像無邊界。
+                我們致力於結合深度學習與頂尖美學，提供下一代的影像處理方案。
             </p>
             <div class="flex justify-center gap-4">
                 <a href="#gallery" class="bg-blue-600 hover:bg-blue-700 px-8 py-3 rounded-full font-semibold transition">查看作品集</a>
@@ -51,42 +51,36 @@
             <div class="p-8 rounded-3xl glass hover:border-blue-500/50 transition">
                 <div class="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center mb-6 text-blue-400 text-2xl">👁️</div>
                 <h3 class="text-xl font-bold mb-3">計算機視覺</h3>
-                <p class="text-slate-400 leading-relaxed">提供精準的物件偵測、語義分割與即時追蹤技術，應用於智慧工業與監控。</p>
+                <p class="text-slate-400 leading-relaxed">提供精準的物件偵測、語義分割與即時追蹤技術。</p>
             </div>
             <div class="p-8 rounded-3xl glass hover:border-purple-500/50 transition">
                 <div class="w-12 h-12 bg-purple-500/20 rounded-lg flex items-center justify-center mb-6 text-purple-400 text-2xl">🎨</div>
                 <h3 class="text-xl font-bold mb-3">生成式影像</h3>
-                <p class="text-slate-400 leading-relaxed">客製化 Stable Diffusion 模型訓練，為企業提供專屬風格的視覺內容生成。</p>
+                <p class="text-slate-400 leading-relaxed">客製化 Stable Diffusion 模型訓練與視覺內容生成。</p>
             </div>
             <div class="p-8 rounded-3xl glass hover:border-emerald-500/50 transition">
                 <div class="w-12 h-12 bg-emerald-500/20 rounded-lg flex items-center justify-center mb-6 text-emerald-400 text-2xl">⚡</div>
                 <h3 class="text-xl font-bold mb-3">模型優化</h3>
-                <p class="text-slate-400 leading-relaxed">針對嵌入式設備與行動裝置進行模型壓縮與量化，實現低延遲極速推理。</p>
+                <p class="text-slate-400 leading-relaxed">針對嵌入式設備進行模型壓縮，實現極速推理。</p>
             </div>
         </div>
     </section>
 
     <section id="gallery" class="py-24 bg-slate-900/50">
         <div class="container mx-auto px-6">
-            <div class="flex justify-between items-end mb-12">
-                <div>
-                    <h2 class="text-3xl font-bold mb-2">實驗作品展示</h2>
-                    <p class="text-slate-400">最新 AI 模型生成的視覺案例</p>
-                </div>
-            </div>
+            <h2 class="text-3xl font-bold mb-12">實驗作品展示</h2>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                <div class="group relative overflow-hidden rounded-2xl aspect-square bg-slate-800">
-                    <div class="absolute inset-0 bg-blue-600/20 opacity-0 group-hover:opacity-100 transition flex items-center justify-center font-bold">Neural Art #01</div>
-                    <img src="https://images.unsplash.com/photo-1675271591211-126ad94e495d?auto=format&fit=crop&w=500&q=80" alt="Work 1" class="w-full h-full object-cover">
+                <div class="rounded-2xl aspect-square bg-slate-800 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1675271591211-126ad94e495d?w=500" class="w-full h-full object-cover">
                 </div>
-                <div class="group relative overflow-hidden rounded-2xl aspect-square bg-slate-800">
-                    <img src="https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?auto=format&fit=crop&w=500&q=80" alt="Work 2" class="w-full h-full object-cover">
+                <div class="rounded-2xl aspect-square bg-slate-800 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?w=500" class="w-full h-full object-cover">
                 </div>
-                <div class="group relative overflow-hidden rounded-2xl aspect-square bg-slate-800">
-                    <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=500&q=80" alt="Work 3" class="w-full h-full object-cover">
+                <div class="rounded-2xl aspect-square bg-slate-800 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500" class="w-full h-full object-cover">
                 </div>
-                <div class="group relative overflow-hidden rounded-2xl aspect-square bg-slate-800">
-                    <img src="https://images.unsplash.com/photo-1633167606207-d840b5070fc2?auto=format&fit=crop&w=500&q=80" alt="Work 4" class="w-full h-full object-cover">
+                <div class="rounded-2xl aspect-square bg-slate-800 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1633167606207-d840b5070fc2?w=500" class="w-full h-full object-cover">
                 </div>
             </div>
         </div>
@@ -95,22 +89,22 @@
     <section id="contact" class="py-24 container mx-auto px-6 max-w-4xl">
         <div class="glass p-10 rounded-[3rem] shadow-2xl">
             <h2 class="text-3xl font-bold mb-8 text-center">開始您的 AI 專案</h2>
-            <form class="space-y-6">
+            <form id="contact-form" class="space-y-6">
                 <div class="grid md:grid-cols-2 gap-6">
                     <div>
                         <label class="block text-sm font-medium mb-2 text-slate-400">您的姓名</label>
-                        <input type="text" class="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-3 focus:border-blue-500 outline-none transition" placeholder="王小明">
+                        <input type="text" name="userName" required class="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-3 focus:border-blue-500 outline-none transition" placeholder="王小明">
                     </div>
                     <div>
                         <label class="block text-sm font-medium mb-2 text-slate-400">電子郵件</label>
-                        <input type="email" class="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-3 focus:border-blue-500 outline-none transition" placeholder="contact@example.com">
+                        <input type="email" name="userEmail" required class="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-3 focus:border-blue-500 outline-none transition" placeholder="contact@example.com">
                     </div>
                 </div>
                 <div>
                     <label class="block text-sm font-medium mb-2 text-slate-400">專案需求簡述</label>
-                    <textarea rows="4" class="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-3 focus:border-blue-500 outline-none transition" placeholder="請描述您的 AI 視覺需求..."></textarea>
+                    <textarea name="message" rows="4" required class="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-3 focus:border-blue-500 outline-none transition" placeholder="請描述您的 AI 視覺需求..."></textarea>
                 </div>
-                <button type="submit" class="w-full bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 py-4 rounded-xl font-bold text-white transition transform hover:scale-[1.01]">
+                <button type="submit" id="submit-btn" class="w-full bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 py-4 rounded-xl font-bold text-white transition transform hover:scale-[1.01]">
                     送出詢問表單
                 </button>
             </form>
@@ -120,6 +114,44 @@
     <footer class="py-12 text-center text-slate-500 text-sm border-t border-white/5">
         <p>© 2026 AI VISION LAB. All Rights Reserved.</p>
     </footer>
+
+    <script>
+        // --- 這裡填入你在 Google Apps Script 部署得到的網址 ---
+        const scriptURL = '這裡填入你的_GOOGLE_SCRIPT_網址'; 
+        
+        const form = document.getElementById('contact-form');
+        const btn = document.getElementById('submit-btn');
+
+        form.addEventListener('submit', e => {
+            e.preventDefault(); // 防止頁面跳轉
+            
+            if (scriptURL === '這裡填入你的_GOOGLE_SCRIPT_網址') {
+                alert('請先在代碼中填入您的 Google Script 網址！');
+                return;
+            }
+
+            btn.disabled = true;
+            btn.innerText = '正在傳送中...';
+
+            fetch(scriptURL, { 
+                method: 'POST', 
+                body: new FormData(form),
+                mode: 'no-cors' // 解決跨網域存取問題
+            })
+            .then(() => {
+                alert('感謝您的訊息！我們已收到您的需求，將儘速聯繫您。');
+                btn.disabled = false;
+                btn.innerText = '送出詢問表單';
+                form.reset();
+            })
+            .catch(error => {
+                console.error('Error!', error.message);
+                alert('抱歉，傳送失敗，請稍後再試。');
+                btn.disabled = false;
+                btn.innerText = '送出詢問表單';
+            });
+        });
+    </script>
 
 </body>
 </html>
